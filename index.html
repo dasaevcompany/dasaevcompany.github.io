@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dasaev Company</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .toolbar {
@@ -17,7 +21,8 @@
       color: white;
       padding: 16px;
       font-size: 24px;
-      text-align: center;
+      text-align: left;
+      padding-left: 24px;
     }
 
     .description {
@@ -31,6 +36,7 @@
     .app-section {
       text-align: center;
       padding: 32px;
+      flex: 1;
     }
 
     .app-icon {
@@ -71,34 +77,64 @@
         width: 120px;
       }
     }
+
+    footer {
+      background-color: #cccccc;
+      color: #000000;
+      text-align: left;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <div class="toolbar">
-    Dasaev Company
+<div class="toolbar">
+  Dasaev Company
+</div>
+
+<div class="description">
+  En Dasaev Company nos especializamos en el desarrollo de soluciones de software móvil innovadoras, abarcando plataformas Android e iOS. Nuestra misión es brindar herramientas tecnológicas eficientes, intuitivas y de alta calidad para optimizar procesos y potenciar el crecimiento de nuestros clientes.
+</div>
+
+<div class="app-section">
+  <img src="icon_app.png" alt="App Icon" class="app-icon">
+  <div class="app-name">Inventory</div>
+  <div class="app-description">
+    Administra ventas, productos e inventario fácilmente. Genera reportes y controla tu negocio desde un solo lugar con Inventory.
   </div>
 
-  <div class="description">
-    En Dasaev Company nos especializamos en el desarrollo de soluciones de software móvil innovadoras, abarcando plataformas Android e iOS. Nuestra misión es brindar herramientas tecnológicas eficientes, intuitivas y de alta calidad para optimizar procesos y potenciar el crecimiento de nuestros clientes.
+  <div class="store-links">
+    <a href="https://apps.apple.com/mx/app/inventory/id6744468223" target="_blank">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Disponible en App Store">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.dasaevcompany.inventory&hl=es_MX" target="_blank">
+      <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/df189245424bb261a0fc6a15b6269749.svg" alt="Disponible en Google Play">
+    </a>
   </div>
+</div>
 
-  <div class="app-section">
-    <img src="icon_app.png" alt="App Icon" class="app-icon">
-    <div class="app-name">Inventory</div>
-    <div class="app-description">
-      Administra ventas, productos e inventario fácilmente. Genera reportes y controla tu negocio desde un solo lugar con Inventory.
-    </div>
-
-    <div class="store-links">
-      <a href="https://apps.apple.com/mx/app/inventory/id6744468223" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Disponible en App Store">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.dasaevcompany.inventory&hl=es_MX" target="_blank">
-        <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/df189245424bb261a0fc6a15b6269749.svg" alt="Disponible en Google Play">
-      </a>
-    </div>
+<footer>
+  <div class="footer-content">
+    <div>Contacto: dasaevcompany@gmail.com</div>
+    <div><a href="https://www.google.com" target="_blank">Términos y Condiciones</a></div>
   </div>
+</footer>
 
 </body>
 </html>
